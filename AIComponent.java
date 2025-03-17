@@ -11,7 +11,6 @@ public class AIComponent {
         this.isActive = true; 
     }
 
-    // Metode simple noi
     public String isAIActive() {
         return isActive ? "AI is currently active." : "AI is currently inactive.";
     }
