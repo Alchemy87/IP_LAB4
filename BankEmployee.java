@@ -9,7 +9,6 @@ public class BankEmployee {
         this.reviewedResponses = 0;
     }
 
-    // Metode simple noi
     public void increaseReviewedResponses() {
         reviewedResponses++;
         System.out.println(name + " has reviewed another response. Total: " + reviewedResponses);
@@ -19,11 +18,9 @@ public class BankEmployee {
         return "Employee Name: " + name + ", ID: " + employeeID + ", Responses Reviewed: " + reviewedResponses;
     }
 
-    // Metode simple existente
     public String getName() { return name; }
     public int getReviewedResponses() { return reviewedResponses; }
 
-    // Metodă complexă
     public void validateResponse(String question, String aiResponse, BankCustomer customer) {
         reviewedResponses++;
         String finalResponse = aiResponse + " (Reviewed by " + name + ")";
